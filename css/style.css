@@ -71,7 +71,7 @@ body{
     background: linear-gradient(
         90deg,
         var(--background-color),
-        #fff
+        #bbb
     );
     /* background: linear-gradient(
         90deg,
