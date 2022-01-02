@@ -135,6 +135,12 @@ body{
     border: 0;
     margin-top: 20px;
     color: var(--text-color);
+    
+}
+
+.getresume a{
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .getresume:focus{
@@ -1131,3 +1137,5 @@ body{
     );
 }
 /* END FOOTER SECTION  */
+
+
