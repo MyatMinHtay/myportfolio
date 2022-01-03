@@ -59,6 +59,11 @@ body{
     overflow-x: hidden;
 }
 
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 
 .navmyat{
     /* background: linear-gradient(
@@ -145,6 +150,9 @@ body{
 
 .getresume:focus{
     outline: 0;
+    border: none;
+    box-shadow: none;
+    transform: scale(0.98);
 }
 @media(max-width:600px){
     .mm{
