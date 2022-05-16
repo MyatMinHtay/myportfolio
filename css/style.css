@@ -85,30 +85,52 @@ a{
     height: 80vh;
     margin-top: 100px;
     display: flex;
-    position: static;
-    
+    /* position: static; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: #01ff5f; */
 }
 
 .photocontainer{
-    /* height: 350px; */
+    
+    height: 450px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.paragarphcontainer{
+    
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: red; */
+    
 }
 
-.paragarphcontainer{
-    /* height: 350px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: blue; */
+.myimg{
+    
+    width: 400px;
+    height: 400px;
+    background-image: url('../img/myimg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
-.myimg img{
-    width: 350px;
-    height: 350px;
+@media (max-width:800px){
 
+    .photocontainer{
+       
+        height: 350px;
+    }
+    .myimg{
+        width: 300px;
+        height: 300px;
+    }
 }
 
 .paragraph{
@@ -536,24 +558,32 @@ a{
 }
 
 .moreimgs{
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: blue; */
 }
 
-.moreimgs img{
-    width: 350px;
-    height: 350px;
-    /* margin-left: 100px; */
+.moreimgcontainer{
+    width: 400px;
+    height: 400px;
+    background-image: url('../img/myimg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+
    
 }
 
 .detailboxs{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
+    /* background-color: red; */
 }
 
 
@@ -568,14 +598,28 @@ a{
 
 }
 
+@media(max-width:800px){
+    .moreimgs{
+       
+        height: 350px;
+    }
+
+    .moreimgcontainer{
+        height: 300px;
+    }
+}
 
 @media(max-width:600px){
     .moreinfoboxs{
         flex-direction: column;
     }
 
-    .moreimgs img{
-        width: 300px;
+    .moreimgs{
+       
+        height: 350px;
+    }
+
+    .moreimgcontainer{
         height: 300px;
     }
 
