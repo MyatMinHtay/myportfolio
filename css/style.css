@@ -551,6 +551,10 @@ a{
     font-weight: bold;
 }
 
+#aboutparagraph{
+    text-align: justify;
+}
+
 .moreinfoboxs{
     display: flex;
     justify-content: space-between;
@@ -598,16 +602,7 @@ a{
 
 }
 
-@media(max-width:800px){
-    .moreimgs{
-       
-        height: 350px;
-    }
 
-    .moreimgcontainer{
-        height: 300px;
-    }
-}
 
 @media(max-width:600px){
     .moreinfoboxs{
