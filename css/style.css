@@ -1,22 +1,22 @@
 :root{
 
-    --background-color: rgba(9, 51, 63, 0.8);
-    --backgrounds-color: rgba(9, 51, 63, 0.75);
+    /* --background-color: rgba(102, 102, 102, 1);
+    --backgrounds-color: rgba(102, 102, 102, 0.7); */
 
     --text-color: rgba(0,0,0,0.8);
     --texts-color: rgba(0,0,0,0.6);
 
-    --primary-color:rgba(20, 255, 102, 0.7);
-    --secondary-color:rgba(119, 237, 168, 0.5);
+    --primary-color:rgba(1, 255, 94,1);
+    --primarys-color:rgba(1, 255, 94, 0.7);
 
-    --secondcard-color: rgba(255, 156, 15,0.75);
-    --secondcards-color: rgba(255, 203, 83,0.7);
+    --secondcard-color: rgba(255, 156, 15,1);
+    --secondcards-color: rgba(255, 156, 15,0.7);
 
-    --thirdcard-color: rgba(136, 0, 204,0.75);
-    --thirdcards-color: rgba(136, 0, 204,0.6);
+    --thirdcard-color: rgba(171, 5, 237,1);
+    --thirdcards-color: rgba(171, 5, 237,0.7);
 
-    --skill-color: rgba(0, 187, 202,0.5);
-    --skills-color: rgba(0, 187, 202,1);
+    --skill-color: rgba(7, 230, 247,1);
+    --skills-color: rgba(7, 230, 247,0.8);
   
 }
 
@@ -25,36 +25,29 @@
 }
 
 html.dark{
-    --background-color: rgba(9, 51, 63, 0.75);
-    --backgrounds-color: rgba(9, 51, 63, 0.9);
+    /* --background-color: rgba(102, 102, 102, 0.7);
+    --backgrounds-color: rgba(102, 102, 102, 1); */
 
-    --primary-color:rgba(20, 255, 102, 0.5);
-    --secondary-color:rgba(20, 255, 102, 0.7);
+    --primary-color:rgba(1, 255, 94, 0.7);
+    --primarys-color:rgba(1, 255, 94, 1);
 
-    --secondcard-color: rgba(255, 203, 83,0.7);
-    --secondcards-color: rgba(255, 156, 15,0.75);
+    --secondcard-color: rgba(255, 156, 15,0.7);
+    --secondcards-color: rgba(255, 156, 15,1);
 
-    --thirdcard-color: rgba(136, 0, 204,0.6);
-    --thirdcards-color: rgba(136, 0, 204,0.75);
+    --thirdcard-color: rgba(171, 5, 237,0.7);
+    --thirdcards-color: rgba(171, 5, 237,1);
 
     --text-color: rgba(0,0,0,0.6);
     --texts-color: rgba(0,0,0,0.8);
 
-    --skill-color: rgba(0, 187, 202,1);
-    --skills-color: rgba(0, 187, 202,0.5);
+    --skill-color: rgba(7, 230, 247,0.8);
+    --skills-color: rgba(7, 230, 247,1);
 
 
 }
 
 body{
-
-    /* background-color: var(--background-color); */
-    background: linear-gradient(
-        90deg,
-        var(--background-color),
-        #aaa
-    );
-    
+    background-color: #666;
     color: black;
     overflow-x: hidden;
 }
@@ -66,32 +59,26 @@ a{
 
 
 .navmyat{
-    /* background: linear-gradient(
-        90deg,
-        var(--primary-color),
-        var(--secondcard-color)
-        
-    ); */
-
+    
+  
     background: linear-gradient(
         90deg,
-        var(--background-color),
-        #bbb
+        #666,
+        #aaa
     );
-    /* background: linear-gradient(
-        90deg,
-        #aaa,
-        var(--background-color)
-    ); */
-    color: black !important;
+  
+    
 }
 
-.nav-link{
-    color: black !important;
-}
-
-.menuitem:hover{
+.navbar-dark .navbar-nav .nav-link{
+    color: var(--skill-color);
     font-weight: bold;
+    text-shadow: 0 0 20px #01ff5f;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: var(--skill-color);
+    transform: scale(1.1);
 }
 
 .mm{
@@ -260,7 +247,12 @@ a{
 
 
 .thirdcards,.sixthcards{
-    background-color: var(--thirdcard-color);
+    background: linear-gradient(
+        90deg,
+       #aaa,
+        var(--thirdcard-color)
+        
+    );
     
  
 }
@@ -502,7 +494,9 @@ a{
 /* START MORE INFORMATION SECTION  */
 
 .edu{
-    color: var(--primary-color);
+    color: var(--skill-color);
+    font-weight: bold;
+    text-shadow: 0 0 50px var(--primary-color);
 }
 
 .aboutrow{
@@ -515,19 +509,23 @@ a{
 
 
 .edu2{
-    color: var(--text-color);
+    
+    color: var(--skill-color);
     font-weight: bold;
+    text-shadow: 0 0 50px var(--primary-color);
 }
 
 .edu2child{
     color: var(--secondcard-color);
+    font-weight: bold;
+    text-shadow: 0 0 50px var(--secondcard-color);
 }
 
 .rstg{
     display: block;
     margin: 20px;
     text-align: right;
-    color: var(--text-color);
+    color: var(--skill-color);
     font-weight: bold;
 }
 
@@ -550,21 +548,6 @@ a{
    
 }
 
-@media(max-width:600px){
-    .moreinfoboxs{
-        flex-direction: column;
-    }
-
-    .moreimgs img{
-        width: 300px;
-        height: 300px;
-    }
-
-    .myimg{
-        margin-top: 0px;
-    }
-}
-
 .detailboxs{
     display: flex;
     justify-content: center;
@@ -578,9 +561,33 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin: 10px 0;
+    text-align: left;
+    /* background-color: red; */
 
 }
+
+
+@media(max-width:600px){
+    .moreinfoboxs{
+        flex-direction: column;
+    }
+
+    .moreimgs img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .myimg{
+        margin-top: 0px;
+    }
+
+    .edu,.rstg{
+        font-size: 25px;
+    }
+}
+
 
 
 /* END MORE INFORMATION SECTION  */
@@ -588,364 +595,184 @@ a{
 /* START SKILLS SECTION  */
 
 
-.skillcontainers{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
-.skillcontainers .col-12{
-    height: 320px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin-top: 30px;
-    
-}
-
-.skillboxes{
-    width: 100%;
-    height: 100px;
-    position: relative;
-    /* background-color: red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.skillimgboxes{
-    width: 100%;
-  height: 100px;
-  /* background-color: blue; */
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.skillcontainers .skillboxes img{
-    width: 230px;
-    position: absolute;
-    top: -63%;
-    left: -17%;
-    animation: imgturn 1s linear infinite;
-    animation-duration: 10s;
-    /* transform: translate(-50%,-50%); */
-}
-
-.skillcontainers .skillimgboxes img{
+.skillbox{
     width: 300px;
-    position: absolute;
-    top: -22%;
-    left: -82%;
-    animation: imgturn 1s reverse linear infinite;
-    animation-duration: 10s;
-    /* transform: translate(-50%,-50%); */
-}
+    height: 300px;
+    /* background-color: red; */
 
-.skillboxes::before{
-    content: '';
-    width: 45px;
-    height: 45px; 
-    border-radius: 50%;
-    position: absolute;
-    top: -21%;
-    left: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-    z-index: -1;
+
+    position: relative;
+    
 }
 
-
-
-.skillimgboxes::before{
-    content: '';
-    width: 60px;
-    height: 60px;
-    /* background-color: blue; */
+.circleone{
+    width: 170px;
+    height: 170px;
+    
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation: skillani 1.5s linear infinite; */
+}
+
+.sccone .circleone{
+    background: linear-gradient(
+        #01ff5f 50%,
+        #000 50%
+        );
+    /* filter: drop-shadow(0 0 50px #01ff5f); */
+    box-shadow: 0 0 50px #01ff5f;
+    animation: animate 10s linear infinite , skillani 1.5s linear infinite;
+    
+}
+
+
+
+.scctwo .circleone{
+    background: linear-gradient(
+        #ff9c0f 40%,
+        #000 50%
+        );
+        box-shadow: 0 0 50px #ff9c0f;
+        animation: animate 10s linear infinite , skillani 1.5s linear infinite;
+        
+}
+
+.sccthree .circleone{
+    background: linear-gradient(
+        #ab05ed 40%,
+        #000 50%
+        );
+        box-shadow: 0 0 50px #ab05ed;
+        animation: animate 10s linear infinite , skillani 1.5s linear infinite;
+        
+}
+
+.sccfour .circleone{
+    background: linear-gradient(
+        var(--skill-color) 40%,
+        black 50%
+        );
+}
+
+
+.circletwo{
+    width: 150px;
+    height: 150px;
+    /* background-color: #bbb; */
+    border-radius: 50%;
+    background-image: url('../img/skills/css.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: absolute;
-    top: 33%;
-    left: -9%;
-    z-index: -1;
 }
 
-.htmlskills::before{
-    content: '100%';
-    background-image: conic-gradient( var(--primary-color) 100%, var(--skill-color) 0);
-}
-
-.html::before{
-    content: '';
-    background: url('../img/skills/html.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.cssskills::before{
-    content: '100%';
-    background-image: conic-gradient( var(--primary-color) 100%, var(--skill-color) 0);
-}
-
-.css::before{
-    content: '';
-    background: url('../img/skills/css.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.jsskills::before{
-    content: '80%';
-    background-image: conic-gradient( var(--primary-color) 80% , var(--skill-color) 0);
-}
-
-.js::before{
-    content: '';
-    background: url('../img/skills/js.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.bsskills::before{
-    content: '90%';
-    background-image: conic-gradient( var(--primary-color) 90% , var(--skill-color) 0);
-}
-
-.bs::before{
-    content: '';
-    background: url('../img/skills/bootstrap.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.jqueryskills::before{
-    content: '50%';
-    background-image: conic-gradient( var(--primary-color) 50%, var(--skill-color) 0);
-}
-
-.jquery::before{
-    content: '';
-    background: url('../img/skills/jquery.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.mysqlskills::before{
-    content: '50%';
-    background-image: conic-gradient(var(--primary-color) 50% , var(--skill-color) 0);
-}
-
-.mysql::before{
-    content: '';
-    background: url('../img/skills/mysql.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.wordpressskills::before{
-    content: '75%';
-    background-image: conic-gradient( var(--primary-color) 75% , var(--skill-color) 0);
-}
-
-.wordpress::before{
-    content: '';
-    background: url('../img/skills/wordpress.png');
+.circlethree{
+    width: 75px;
+    height: 75px;
     
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: drop-shadow(0 0 50px #01ff5f); */
+}
+
+.sccone .circlethree{
+    background-color: var(--primary-color);
+    filter: drop-shadow(0 0 20px var(--primary-color));
     
+    /* box-shadow: 0 0 50px #01ff5f; */
 }
 
-.githubskills::before{
-    content: '85%';
-    background-image: conic-gradient( var(--primary-color) 85% , var(--skill-color) 0);
+.scctwo .circlethree{
+    background-color: var(--secondcard-color);
+    filter: drop-shadow(0 0 20px var(--secondcard-color));
 }
 
-.github::before{
-    content: '';
-    background: url('../img/skills/github.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.sccthree .circlethree{
+    background-color: var(--thirdcard-color);
+    filter: drop-shadow(0 0 20px var(--thirdcard-color));
 }
 
-.reactskills::before{
-    content: '10%';
-    background-image: conic-gradient( var(--primary-color) 10%, var(--skill-color) 0);
-}
+@keyframes  animate{ 
+    0% 
+    { 
+         filter: hue-rotate(0deg);
+    }
+    100% 
+    { 
+         filter: hue-rotate(360deg);
+    }
+ }
 
-.react::before{
-    content: '';
-    background: url('../img/skills/react.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.vueskills::before{
-    content: '0%';
-    background-image: conic-gradient(var(--primary-color) 0% , var(--skill-color) 0);
-}
-
-.vue::before{
-    content: '';
-    background: url('../img/skills/vue.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.angularskills::before{
-    content: '0%';
-    background-image: conic-gradient( var(--primary-color) 0% , var(--skill-color) 0);
-}
-
-.angular::before{
-    content: '';
-    background: url('../img/skills/angular.png');
-    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-
-.laravelskills::before{
-    content: '25%';
-    background-image: conic-gradient( var(--primary-color) 25% , var(--skill-color) 0);
-}
-
-.laravel::before{
-    content: '';
-    background: url('../img/skills/laravel.png');
-    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-
-.phpskills::before{
-    content: '20%';
-    background-image: conic-gradient(var(--primary-color) 20% , var(--skill-color) 0);
-}
-
-
-.php::before{
-    content: '';
-    background: url('../img/skills/php.jpg'), white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-}
-
-.nodejsskills::before{
-    content: '0%';
-    background-image: conic-gradient(var(--primary-color) 0% , var(--skill-color) 0);
-}
-
-.nodejs::before{
-    content: '';
-    background: url('../img/skills/nodejs.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.mongodbskills::before{
-    content: '0%';
-    background-image: conic-gradient( var(--primary-color) 0% , var(--skill-color) 0);
-}
-
-.mongodb::before{
-    content: '';
-    background: url('../img/skills/mongodb.png');
-    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-
-.pythonskills::before{
-    content: '0%';
-    background-image: conic-gradient( var(--primary-color) 0% , var(--skill-color) 0);
-}
-
-.python::before{
-    content: '';
-    background: url('../img/skills/python.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-@keyframes imgturn{
+@keyframes skillani{
     0%{
         transform: rotate(0deg);
     }
-
     100%{
         transform: rotate(360deg);
     }
 }
 
-@media(max-width:800px){
-    .skillcontainers .skillboxes img{
-        top: -41%;
-        left: 10%;
-    }
-
-    .skillcontainers .skillimgboxes img{
-        top: -3%;
-        left: -62%;
-    }
-    
-    .skillboxes::before{
-        top: 0%;
-        left: 59%;
-    }
-
-    .skillimgboxes::before{
-        top: 50%;
-        left: 1.5%;
-    }
+.html .circletwo{
+    background-image: url('../img/skills/html.png');
 }
 
-@media(max-width:600px){
-    .skillcontainers .skillboxes img{
-        top: -40%;
-        left: 10%;
-    }
-
-    .skillcontainers .skillimgboxes img{
-        top: -3%;
-        left: -59%;
-    }
-
-    .skillboxes::before{
-        top: 2%;
-        left: 67%;
-    }
-
-    .skillimgboxes::before{
-        top: 50%;
-        left: 15%;
-    }
+.css .circletwo{
+    background-image: url('../img/skills/css.png');
 }
+
+.bootstrap .circletwo{
+    background-image: url('../img/skills/bootstrap.png');
+}
+
+.javascript .circletwo{
+    background-image: url('../img/skills/js.png');
+}
+
+.vuejs .circletwo{
+    background-image: url('../img/skills/vue.png');
+}
+
+.jquery .circletwo{
+    background-image: url('../img/skills/jquery.png');
+}
+
+.mysql .circletwo{
+    background-image: url('../img/skills/mysql.png');
+}
+
+.mongodb .circletwo{
+    background-image: url('../img/skills/mongodb.png');
+}
+
+.php .circletwo{
+    background-image: url('../img/skills/php.png');
+}
+
+.laravel .circletwo{
+    background-image: url('../img/skills/laravel.png');
+}
+
+.wordpress .circletwo{
+    background-image: url('../img/skills/wordpress.png');
+}
+
+.github .circletwo{
+    background-image: url('../img/skills/github.png');
+}
+
+
 /* END SKILLS SECTION  */
 
 /* END ABOUT SECTION  */
@@ -954,7 +781,8 @@ a{
 
 /* START SERVICES SECTION  */
 .serv{
-    color: var(--primary-color);
+    color: #01ff5f;
+    text-shadow: 0 0 50px #01ff5f;
 }
 
 .pageul{
@@ -977,7 +805,7 @@ a{
 .pagemangement{
     background: linear-gradient(
         90deg,
-        #aaa,
+        #ddd,
         var(--primary-color)   
     );
 }
@@ -985,7 +813,7 @@ a{
 .staticwebsite{
     background: linear-gradient(
         90deg,
-        #aaa,
+        #ddd,
         var(--secondcard-color)   
     );
 }
@@ -993,7 +821,7 @@ a{
 .creatingcontent{
     background: linear-gradient(
         90deg,
-        #aaa,
+        #ddd,
         var(--thirdcard-color)   
     );
 }
@@ -1042,13 +870,13 @@ a{
 
 .form-group input:focus + label span,
 .form-group input:valid + label span{
-    color: var(--primary-color);
+    color: var(--skills-color);
     transform: translateY(-30px);
 }
 
 .form-group textarea:focus + label span,
 .form-group textarea:valid + label span{
-    color: var(--primary-color);
+    color: var(--skills-color);
     transform: translateY(-30px);
 }
 
@@ -1061,14 +889,32 @@ a{
 }
 
 
-.map,.map-box{
+.map{
     height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+    
+}
+
+.map-box{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
 }
 
 .submitbtn{
     background: linear-gradient(
         90deg,
-        #aaa,
+        #ccc,
         var(--primary-color)   
     );
     border-radius: 50px;
@@ -1083,6 +929,8 @@ a{
 
 @media(max-width:600px){
     .map-box{
+        width: 300px;
+        height: 300px;
         margin-top: 50px;
     }
 }
@@ -1116,7 +964,7 @@ a{
 .facebook{
     background: linear-gradient(
         90deg,
-        #aaa,
+        #ddd,
         var(--thirdcard-color)   
     );
 }
@@ -1124,7 +972,7 @@ a{
 .viber{
     background: linear-gradient(
         90deg,
-        #aaa,
+        #ddd,
         var(--secondcard-color)   
     );
 }
@@ -1132,7 +980,7 @@ a{
 .telegram{
     background: linear-gradient(
         90deg,
-        #aaa,
+        #ddd,
         var(--primary-color)   
     );
 }
@@ -1140,7 +988,7 @@ a{
 .gmail{
     background: linear-gradient(
         90deg,
-        #aaa,
+        #ddd,
         var(--thirdcard-color)   
     );
 }
