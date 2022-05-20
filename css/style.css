@@ -216,7 +216,7 @@ a{
 
 
 
-.firstcards,.fourthcards{
+.firstcards,.fourthcards,.sevencards{
     /* background-color: var(--primary-color); */
     background: linear-gradient(
         90deg,
@@ -225,11 +225,11 @@ a{
     );
 }
 
-.firstcards .fa-play,.fourthcards .fa-play{
+.firstcards .fa-play,.fourthcards .fa-play,.sevencards .fa-play{
     color: var(--secondcard-color);
 }
 
-.firstcards .getresume,.fourthcards .getresume{
+.firstcards .getresume,.fourthcards .getresume,.sevencards .getresume{
     /* background-color: var(--thirdcard-color); */
     background: linear-gradient(
         90deg,
@@ -294,7 +294,7 @@ a{
     
 }
 
-.firstcards h3,.secondcards h3,.thirdcards h3,.fourthcards h3,.fifthcards h3,.sixthcards h3{
+.firstcards h3,.secondcards h3,.thirdcards h3,.fourthcards h3,.fifthcards h3,.sixthcards h3,.sevencards .h3{
     color: var(--text-color);
 }
 
@@ -395,7 +395,15 @@ a{
     padding: 50px;
 }
 
-#firstproject .demo,#fourthproject .demo{
+.sevenbgs{
+    background: url('../img/thubmnail7.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+}
+
+#firstproject .demo,#fourthproject .demo,#seventhproject .demo{
     color: var(--text-color);
    
     background-color: rgba(196, 125, 232,0.7);
@@ -416,7 +424,7 @@ a{
 }
 
 
-#firstproject .modal-content,#fourthproject .modal-content{
+#firstproject .modal-content,#fourthproject .modal-content,#seventhproject .modal-content{
     border-radius: 10px;
     background-color: rgba(148, 216, 168,0.5);
     box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
@@ -437,7 +445,7 @@ a{
     border: none;
 }
 
-#firstproject .projectdetailbodys,#fourthproject .projectdetailbodys{
+#firstproject .projectdetailbodys,#fourthproject .projectdetailbodys,#seventhproject .projectdetailbodys{
     background-color: rgba(196, 125, 232,0.7);
 }
 
@@ -460,43 +468,50 @@ a{
 }
 
 .icone{
-    background: url('../img/skills/nobg/html.png');
+    background: url('../img/skills/html.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .ictwo{
-    background: url('../img/skills/nobg/css.png');
+    background: url('../img/skills/css.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .icthree{
-    background: url('../img/skills/nobg/jquery.png');
+    background: url('../img/skills/jquery.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .icfour{
-    background: url('../img/skills/nobg/js.png');
+    background: url('../img/skills/js.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .icfive{
-    background: url('../img/skills/nobg/bs.png');
+    background: url('../img/skills/bootstrap.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.icone:hover,.ictwo:hover,.icthree:hover,.icfour:hover,.icfive:hover{
+.icsix{
+    background: url('../img/skills/vue.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icone:hover,.ictwo:hover,.icthree:hover,.icfour:hover,.icfive:hover,.icsix:hover{
     border: 2px solid wheat;
-    box-shadow: -5px 5px 5px var(--primary-color);
+    /* box-shadow: -5px 5px 5px var(--primary-color); */
     transform: scale(1.2);
 }
 
