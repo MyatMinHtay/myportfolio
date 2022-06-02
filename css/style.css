@@ -180,7 +180,7 @@ a{
 
 /* START PROJECT SECTION  */
 .card{
-    width: 350px;
+    width: 360px;
     margin: 20px 20px;
     border-radius: 50px;
     overflow: hidden;
@@ -241,7 +241,7 @@ a{
 
 
 
-.secondcards,.fifthcards{
+.secondcards,.fifthcards,.eightcards{
     /* background-color: var(--secondcard-color); */
     background: linear-gradient(
         90deg,
@@ -251,11 +251,11 @@ a{
     );
 }
 
-.secondcards .fa-play,.fifthcards .fa-play{
+.secondcards .fa-play,.fifthcards .fa-play,.eightcards .fa-play{
     color: var(--thirdcard-color);
 }
 
-.secondcards .getresume,.fifthcards .getresume{
+.secondcards .getresume,.fifthcards .getresume,.eightcards .getresume{
     /* background-color: var(--primary-color); */
     background: linear-gradient(
         90deg,
@@ -294,7 +294,7 @@ a{
     
 }
 
-.firstcards h3,.secondcards h3,.thirdcards h3,.fourthcards h3,.fifthcards h3,.sixthcards h3,.sevencards .h3{
+.firstcards h3,.secondcards h3,.thirdcards h3,.fourthcards h3,.fifthcards h3,.sixthcards h3,.sevencards .h3,.eightcards h3{
     color: var(--text-color);
 }
 
@@ -403,6 +403,14 @@ a{
     padding: 50px;
 }
 
+.eightbgs{
+    background: url('../img/laravel.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+}
+
 #firstproject .demo,#fourthproject .demo,#seventhproject .demo{
     color: var(--text-color);
    
@@ -410,7 +418,7 @@ a{
     box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
 }
 
-#secondproject .demo,#fifthproject .demo{
+#secondproject .demo,#fifthproject .demo,#eighthproject .demo{
     color: var(--text-color);
     background-color: rgba(148, 216, 168,0.7);
     
@@ -431,7 +439,7 @@ a{
     border: none;
 }
 
-#secondproject .modal-content,#fifthproject .modal-content{
+#secondproject .modal-content,#fifthproject .modal-content,#eighthproject .modal-content{
     border-radius: 10px;
     background-color: rgba(233, 207, 129,0.5);
     box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
@@ -449,7 +457,7 @@ a{
     background-color: rgba(196, 125, 232,0.7);
 }
 
-#secondproject .projectdetailbodys,#fifthproject .projectdetailbodys{
+#secondproject .projectdetailbodys,#fifthproject .projectdetailbodys,#eighthproject .projectdetailbodys{
     background-color: rgba(148, 216, 168,0.7);
    
 }
@@ -509,7 +517,14 @@ a{
     background-size: cover;
 }
 
-.icone:hover,.ictwo:hover,.icthree:hover,.icfour:hover,.icfive:hover,.icsix:hover{
+.icseven{
+    background: url('../img/skills/laravel.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icone:hover,.ictwo:hover,.icthree:hover,.icfour:hover,.icfive:hover,.icsix:hover,.icseven:hover{
     border: 2px solid wheat;
     /* box-shadow: -5px 5px 5px var(--primary-color); */
     transform: scale(1.2);
