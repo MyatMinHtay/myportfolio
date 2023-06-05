@@ -71,7 +71,7 @@ togglebtns.forEach(togglebtn=>{
 
 const textel = document.getElementById('aboutparagraph');
 console.log(textel.innerHTML)
-const pgh = "I’m a web developer. I start learning about web-development since 2018.Now I can write a small blog , information show website,portfoliowesite and so on. Now I’m learning about PHP and I can build e-commerce website soon. I can give some advice for your business about why your business must have a website and what is the advantages of having a website in your business.So don’t hesitate anymore try to contact me now…  <blockquote>#Rising Together</blockquote><span class=\"rstg\">Myat Min Htay</span> "
+const pgh = "I start learning about web-development since 2018.Then I Join WDF class in DataLand Technology. I Study PHP , Laravel by myself . Then I internship as a backend developer in a Small Startup Company. Then I participated in Grocery Sales POS project as a freelancer.you can look my project video on my website where I mention below.  <blockquote>#Rising Together</blockquote><span class=\"rstg\">Myat Min Htay</span> "
 
 let idx = 1;
 let speed = 50;

@@ -73,7 +73,7 @@ a{
 .navbar-dark .navbar-nav .nav-link{
     color: var(--skill-color);
     font-weight: bold;
-    text-shadow: 0 0 20px #01ff5f;
+    /* text-shadow: 0 0 20px #01ff5f; */
 }
 
 .navbar-dark .navbar-nav .nav-link:hover{
@@ -217,7 +217,7 @@ a{
 
 
 .firstcards,.fourthcards,.sevencards{
-    /* background-color: var(--primary-color); */
+   
     background: linear-gradient(
         90deg,
         #aaa,
@@ -230,7 +230,7 @@ a{
 }
 
 .firstcards .getresume,.fourthcards .getresume,.sevencards .getresume{
-    /* background-color: var(--thirdcard-color); */
+   
     background: linear-gradient(
         90deg,
         #aaa,
@@ -242,7 +242,6 @@ a{
 
 
 .secondcards,.fifthcards,.eightcards{
-    /* background-color: var(--secondcard-color); */
     background: linear-gradient(
         90deg,
        #aaa,
@@ -268,7 +267,7 @@ a{
 
 
 
-.thirdcards,.sixthcards{
+.thirdcards,.sixthcards,.ninethcards{
     background: linear-gradient(
         90deg,
        #aaa,
@@ -279,11 +278,11 @@ a{
  
 }
 
-.thirdcards .fa-play,.sixthcards .fa-play{
+.thirdcards .fa-play,.sixthcards .fa-play,.ninethcards .fa-play{
     color: var(--primary-color);
 }
 
-.thirdcards .getresume,.sixthcards .getresume{
+.thirdcards .getresume,.sixthcards .getresume,.ninethcards .getresume{
     /* background-color: var(--secondcard-color); */
     background: linear-gradient(
         90deg,
@@ -294,7 +293,7 @@ a{
     
 }
 
-.firstcards h3,.secondcards h3,.thirdcards h3,.fourthcards h3,.fifthcards h3,.sixthcards h3,.sevencards .h3,.eightcards h3{
+.firstcards h3,.secondcards h3,.thirdcards h3,.fourthcards h3,.fifthcards h3,.sixthcards h3,.sevencards .h3,.eightcards h3,.ninethcards h3{
     color: var(--text-color);
 }
 
@@ -411,6 +410,14 @@ a{
     padding: 50px;
 }
 
+.ninethbgs{
+    background: url('../img/thumbnail9.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+}
+
 #firstproject .demo,#fourthproject .demo,#seventhproject .demo{
     color: var(--text-color);
    
@@ -425,7 +432,7 @@ a{
     box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
 }
 
-#thirdproject .demo,#sixthproject .demo{
+#thirdproject .demo,#sixthproject .demo,#ninethproject .demo{
     color: var(--text-color);
     background-color: rgba(233, 207, 129,0.7);
     box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
@@ -446,7 +453,7 @@ a{
     border: none;
 }
 
-#thirdproject .modal-content,#sixthproject .modal-content{
+#thirdproject .modal-content,#sixthproject .modal-content,#ninethproject .modal-content{
     border-radius: 10px;
     background-color: rgba(196, 125, 232,0.5);
     box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
@@ -462,7 +469,7 @@ a{
    
 }
 
-#thirdproject .projectdetailbodys,#sixthproject .projectdetailbodys{
+#thirdproject .projectdetailbodys,#sixthproject .projectdetailbodys,#ninethproject .projectdetailbodys{
     background-color: rgba(233, 207, 129,0.7);
    
 }
@@ -548,7 +555,7 @@ a{
 .edu{
     color: var(--skill-color);
     font-weight: bold;
-    text-shadow: 0 0 50px var(--primary-color);
+    /* text-shadow: 0 0 50px var(--primary-color); */
 }
 
 .aboutrow{
@@ -564,13 +571,13 @@ a{
     
     color: var(--skill-color);
     font-weight: bold;
-    text-shadow: 0 0 50px var(--primary-color);
+    /* text-shadow: 0 0 50px var(--primary-color); */
 }
 
 .edu2child{
     color: var(--secondcard-color);
     font-weight: bold;
-    text-shadow: 0 0 50px var(--secondcard-color);
+    /* text-shadow: 0 0 50px var(--secondcard-color); */
 }
 
 .rstg{
@@ -851,7 +858,7 @@ a{
 /* START SERVICES SECTION  */
 .serv{
     color: #01ff5f;
-    text-shadow: 0 0 50px #01ff5f;
+    /* text-shadow: 0 0 50px #01ff5f; */
 }
 
 .pageul{
